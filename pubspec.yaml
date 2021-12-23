@@ -1,0 +1,205 @@
+name: kokuchi_event
+description: A new Flutter application.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.1+118
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.3
+
+  # 20200607
+  flutter_neumorphic: ^3.0.2
+
+  # 20200607 state notifier
+  freezed_annotation:
+  flutter_state_notifier: ^0.4.2
+  state_notifier: ^0.5.0
+
+  # 20200607 firebase
+  firebase_core: 0.5.0
+  firebase_analytics: 6.0.0
+  cloud_firestore: ^0.14.0+2
+  cloud_functions: 0.6.0
+
+  # 20200612
+  firebase_auth: 0.18.0+1
+
+  # 20200615
+  google_sign_in: 4.5.3
+  apple_sign_in: ^0.1.0
+
+  # 20200617
+  persistent_bottom_nav_bar: ^1.5.5
+  flutter_sticky_header: ^0.4.2
+  direct_select: ^1.0.2+1
+  datetime_picker_formfield: ^1.0.0
+
+  # 20200620
+  provider: ^4.1.3
+  fluttertoast: ^4.0.1
+  flutter_signin_button: ^1.0.0
+  shared_preferences: ^0.5.7+3
+
+  # 20200623
+  cached_network_image: ^2.2.0+1
+  image_picker: 0.6.7+10
+  path_provider: ^1.6.11
+  flutter_native_image: ^0.0.5+2
+  firebase_storage: 4.0.0
+
+  # 20200705
+  algolia: ^0.1.7
+
+  # 20200712
+  url_launcher: ^5.5.0
+
+  # 20200714
+  maps_launcher: ^1.2.1
+
+  # 20200723
+  awesome_dialog: ^1.1.3
+
+  # 20200724
+  google_fonts: ^1.1.0
+
+  # 20200724
+  flutter_local_notifications: ^1.4.4+2
+  launch_review: ^2.0.0
+
+  # 20200801
+  modal_progress_hud: ^0.1.3
+
+  # 20200806
+#  connectivity: ^0.4.9
+
+  # 20200809
+  share: ^0.6.5
+  sa_stateless_animation: ^1.0.1
+
+  # 20200810
+  flutter_statusbarcolor: ^0.2.3
+
+  # 20200814
+  characters: ^1.0.0
+
+  # 20200821 設定の通知を読み取り
+  notification_permissions: ^0.4.7
+
+  # 20200822 ビルドタイプの読み取りで使用
+  enum_to_string: ^1.0.9
+
+  # 20200831 share機能搭載
+  firebase_dynamic_links: 0.6.0
+
+  # 20200904 強制アップデート
+  get_it: ^4.0.4
+  firebase_remote_config: 0.4.0
+  package_info: '>=0.4.0+17 <2.0.0'
+
+  # 20200906 配列distinct
+  queries: ^0.1.14
+
+  # 20200923
+  firebase_crashlytics: ^0.2.0
+
+  # 20200923 image_pickerの代わり
+#  file_picker: ^2.0.2+2
+
+  # 20200927
+  multi_image_picker: ^4.7.14
+  flutter_absolute_path: ^1.0.6
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # 20200607 state notifier
+  build_runner:
+  freezed:
+
+  # 20200610 log
+  logger: ^0.9.1
+  pedantic_mono: any
+
+  # 20200806
+  flutter_launcher_icons:
+    git:
+      url: https://github.com/fluttercommunity/flutter_launcher_icons.git
+      ref: flavors
+  flutter_native_splash: ^0.1.9
+
+  # 20200811
+  flutter_localizations:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+flutter_icons:
+  ios: true
+  android: true
+
+flutter_native_splash:
+  image: assets/images/splash.png
+  color: "#ffffff"
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

@@ -1,0 +1,15 @@
+//
+//  Development.xcconfig
+//  Runner
+//
+//  Created by 竹尾幸紘 on 2020/06/07.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+FLUTTER_FLAVOR=Development
+PRODUCT_BUNDLE_IDENTIFIER=com.application.kokuchiEvent.development
+DISPLAY_NAME=Kokuchi Dev
+ASSETCATALOG_COMPILER_APPICON_NAME=AppIcon-development
+DART_DEFINES=FLAVOR=development
